@@ -81,8 +81,8 @@
 [Executioner]
   type = Transient
   solve_type = LINEAR
-petsc_options_iname = '-pc_type -pc_asm_overlap -sub_pc_type  -ksp_type -ksp_max_it'
-petsc_options_value = 'asm 2 ilu gmres 100'
+petsc_options_iname = '-pc_type -pc_asm_overlap -sub_pc_type  -ksp_type -ksp_max_it ksp_gmres_modifiedgramschmidt'
+petsc_options_value = 'asm 2 ilu gmres 100 "" '
   num_steps = 1
 []
 
